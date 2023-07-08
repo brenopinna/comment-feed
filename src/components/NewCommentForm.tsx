@@ -25,7 +25,7 @@ export function NewCommentForm({ setComments }: NewCommentFormProps) {
     const newComment: Comment = {
       email,
       comment,
-      createdAt: new Date().toDateString(),
+      createdAt: new Date().toUTCString(),
     }
     addComment(newComment)
   }
